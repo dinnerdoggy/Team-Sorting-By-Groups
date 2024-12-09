@@ -73,7 +73,7 @@ function Home() {
 
   const handleShuffle = () => {
     const shuffledTeam = shuffleArray(team); // Shuffle the team array
-    const newGroupedTeam = groupTeamMembers(shuffledTeam, 'Kayla', 'Tommy'); // Group again
+    const newGroupedTeam = groupTeamMembers(shuffledTeam); // Group again, Add two names like "shuffledTeam, 'name', 'name'" to exclude grouping
     setGroupedTeam(newGroupedTeam); // Update the state with new groups
   };
 
